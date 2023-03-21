@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --sidebar-bg-color: #ffffff;
+    --body-bg-color: #e6e8ea;
+    --color-red: #f24a4b;
+    --faint-bg-color: #f2e8e8;
+    --dot-1: #f7ac1c;
+    --dot-2: #3dc373;
+    --dot-3: #225de6;
+    --black-color: #000;
+    --black-faint-color: rgba(0, 0, 0, 0.6);
+    --white-color: #fff;
+    --logo-bg-color: #1f5de6;
+    --light-dark-color: #fff;
+    --lightBx-color: #f6f6f6;
+}
+
+body{
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+body.dark-theme{
+    --sidebar-bg-color: #1c2536;
+    --black-color: #fff;
+    --faint-bg-color: #293752;
+    --white-color: #293752;
+    --light-dark-color: #293651;
+    --lightBx-color: #19202f;
+    --black-faint-color: rgba(255,255,255,0.6);
+}
+
+body.dark-theme .icon {
+    fill: #fff;
+}
+
+.logoText{
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    color: var(--black-color);
+}
+
+.icon{
+    width: 50px;
+    cursor: pointer;
+}
+
+.logo{
+    width: 3rem;
+    border-radius: 0.3rem;
+}
+
+.menuItems{
+    margin: 1.6rem 0;
+}
+
+.menuItem{
+    border-radius: 0.4rem;
+}
+
+.subHeading{
+    color: var(--black-faint-color);
+    margin-bottom: 0.7rem;
+}
+
+.menuItems{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItems li{
+    height: 45px;
+    display: flex;
+    justify-items: center;
+    border-radius: 0.4rem;
+}
+
+.items li{
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.container .sidebarMenu{
+    background-color: var(--sidebar-bg-color);
+    width: 330px;
+    border-top-right-radius: 0.4rem;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    transition: 0.4s ease;
+}
+
+.container .sidebarMenu.active .logoText{
+    display: none;
+}
+
+.container .sidebarMenu.active{
+    width: 100px;
+}
+
+.container .sidebarMenu.active .userDetailsBx .userInfoBx{
+    display: none;
+}
+
+.container .sidebarMenu.active .userDetailsBx .rightBx{
+    display: none;
+}
+
+.container .sidebarMenu.active .searchBx{
+    display: none;
+}
+
+.container .sidebarMenu.active .lightDarkModeBx span{
+    display: none;
+}
+
+.container .sidebarMenu.active .lightDarkModeBx {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .sidebarMenu.active li a span{
+    opacity: 0;
+    display: none;
+}
+
+.container .sidebarMenu .header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.container .sidebarMenu .header .toggleSwitch{
+    position: absolute;
+    top: 50%; right: -2.6rem;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--logo-bg-color);
+}
+
+.container .sidebarMenu .header .toggleSwitch .icon{
+    fill: #fff;
+}
+
+.sidebarMenu .header .logoBx{
+    background:var(--logo-bg-color);
+    padding: 0 1rem;
+    border-radius: 0.7rem;
+    color: #fff;
+}
+
+.sidebarMenu .menuBx{
+    margin: 1.3rem 0;
+}
+
+.sidebarMenu .menuBx .searchBx{
+    background: var(--faint-bg-color);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 0.2rem;
+}
+
+.sidebarMenu .menuBx .searchBx input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 0.6rem;
+    color: var(--black-color);
+}
+
+
+.menuItems li:hover, .items li:hover{
+    background-color: var(--faint-bg-color);
+}
+
+.menuItems li:not(:last-child), .items li:not(:last-child){
+    margin-bottom: 0.8rem;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0.4rem 0;
+}
+
+.menuItems li .menuLink{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--black-color);
+}
+
+.menuLinks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black-color);
+}
+
+.menuLinks .leftBx{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dotBx{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dot{
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+    border-radius: 50%;
+}
+
+.dot-1{
+    background-color: var(--dot-1);
+}
+
+.dot-2{
+    background-color: var(--dot-2);
+}
+
+.dot-3{
+    background-color: var(--dot-3);
+}
+
+.lightDarkModeBx{
+    background-color: var(--lightBx-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+    border-radius: 0.7rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.lightDarkModeBx div{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
+}
+
+.lightDarkModeBx div span{
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.lightDarkModeBx .lightBx.active{
+    background-color: var(--light-dark-color);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lightDarkModeBx .darkBx.active{
+    background-color: var(--light-dark-color);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userDetailsBx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.userDetailsBx .leftBx{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.userDetailsBx .leftBx .userInfoBx .username{
+    font-weight: 520;
+    color: var(--black-color);
+}
+
+.userDetailsBx .leftBx .userInfoBx .email{
+    color: var(--black-faint-color);
+    font-size: 0.8rem;
+}
+
+.userDetailsBx .leftBx .imgBx{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.userDetailsBx .leftBx .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

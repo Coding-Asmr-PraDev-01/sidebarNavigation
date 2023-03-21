@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Sidebar Menu using Html, Css and JavaScript</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebarMenu">
+            <div class="header">
+                <div class="logoBx">
+                    <h1>P</h1>
+                </div>
+                <h1 class="logoText">Coding PraDev</h1>
+                <div class="toggleSwitch">
+                    <box-icon name='chevron-right' class="icon"></box-icon>
+                </div>
+            </div>
+            <div class="menuBx">
+                <div class="searchBx">
+                    <box-icon name='search' class="icon"></box-icon>
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <ul class="menuItems">
+                    <p class="subHeading">Menu</p>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='home-alt' class="icon"></box-icon>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='timer' class="icon"></box-icon>
+                            <span>Activity</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='task' class="icon"></box-icon>
+                            <span>Task</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='user' class="icon"></box-icon>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='bell' class="icon"></box-icon>
+                            <span>Notification</span>
+                        </a>
+                    </li>
+                    <div class="divider"></div>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='cog' class="icon"></box-icon>
+                            <span>Setting</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='flag' class="icon"></box-icon>
+                            <span>Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLink">
+                            <box-icon name='support' class="icon"></box-icon>
+                            <span>Support</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="items">
+                    <p class="subHeading">Group</p>
+                    <li class="menuItem">
+                        <a href="#" class="menuLinks">
+                            <div class="leftBx">
+                                <div class="dotBx">
+                                    <i class="dot dot-1"></i>
+                                </div>
+                                <span>Design System</span>
+                            </div>
+                            <div class="rightBx">
+                                <box-icon type='solid' name='chevron-right' class="icon"></box-icon>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLinks">
+                            <div class="leftBx">
+                                <div class="dotBx">
+                                    <i class="dot dot-2"></i>
+                                </div>
+                                <span>Latest News</span>
+                            </div>
+                            <div class="rightBx">
+                                <box-icon type='solid' name='chevron-right' class="icon"></box-icon>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuLinks">
+                            <div class="leftBx">   
+                                <div class="dotBx">
+                                    <i class="dot dot-3"></i>
+                                </div> 
+                                
+                                <span>Gallery</span>
+                            </div>
+                            <div class="rightBx">
+                                <box-icon type='solid' name='chevron-right' class="icon"></box-icon>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="lightDarkModeBx">
+                    <div class="lightBx active">
+                        <box-icon name='sun' class="icon"></box-icon>
+                        <span>Light</span>
+                    </div>
+                    <div class="darkBx">
+                        <box-icon name='moon' class="icon"></box-icon>
+                        <span>Dark</span>
+                    </div>
+                </div>
+
+                <div class="userDetailsBx">
+                    <div class="leftBx">
+                        <div class="imgBx">
+                            <img src="./userimg.jpg" alt="" />
+                        </div>
+                        <div class="userInfoBx">
+                            <p class="username">PraDev Jone</p>
+                            <p class="email">pradev0101@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="rightBx">
+                        <box-icon name='exit' class="icon"></box-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
